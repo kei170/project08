@@ -1,6 +1,6 @@
-const API_KEY = "1d1474a043ac50220a9dabe5bae0ec2e";
+const API_KEY = "93efbc5fa1035f6a0e8ba15c84f6762c";
 
-function onGeoOk(position){
+function onGeoOk(position) {
     const lat = position.coords.latitude;
     const lon = position.coords.longitude;
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
@@ -11,9 +11,9 @@ function onGeoOk(position){
             const city = document.querySelector("#weather span:last-child");
             city.innerHTML = data.name;
             weather.innerHTML = `${data.weather[0].main} / ${data.main.temp}`;
-    });
+        });
 }
-function onGeoError(){
+function onGeoError() {
     alert("Can't find you. No weather for you.");
 }
 
