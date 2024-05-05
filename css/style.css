@@ -1,3 +1,68 @@
 .hidden {
     display: none;
 }
+
+body {
+    background: url('/img/galaxy-3608029_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#clock {
+    font-size: 60px;
+    margin-top: 20vh;
+    /* Viewport height */
+}
+
+#greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#todo-form input[type="text"] {
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+#todo-form input[type="text"]:focus {
+    outline: none;
+}
+
+#quote,
+#weather {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 배경에 반투명 효과를 추가 */
+    color: white;
+    text-align: center;
+}
+
+#quote {
+    bottom: 40px;
+    /* 명언의 위치 조정 */
+}
+
+#weather {
+    bottom: 10px;
+    /* 화면 하단에 위치 */
+}
+
+#quote span,
+#weather span {
+    display: block;
+    /* 텍스트를 블록 요소로 표시 */
+}
+
+#quote span {
+    margin-right: 10px;
+    /* 필요에 따라 조정 */
+}
